@@ -1,0 +1,24 @@
+/** 
+ * Custom CSS 
+ */
+table { 
+	box-shadow: #bfbfbf 2px 2px 5px; 
+}
+.hidden {
+    display: none;
+}
+.placeholder {
+    padding: 0;
+    margin: 0;
+}
+.short-code em {
+    cursor: pointer;
+}
+.custom-alert, #copied {
+	position: fixed;
+    z-index: 99;
+    text-align: center;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
