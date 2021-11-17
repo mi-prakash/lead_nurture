@@ -63,7 +63,7 @@ class AdminController extends Controller
                         'email' => $request->email,
                         'password' => Hash::make($request->new_password)
                     );
-           
+
         User::create($user_data);
 
         Session::flash('success_message','Successfully saved');
@@ -96,7 +96,7 @@ class AdminController extends Controller
                     ]);
             $user_data['password'] = Hash::make($request->new_password);
         }
-           
+
         User::where('identifier', $identifier)->update($user_data);
 
         Session::flash('success_message','Successfully updated');
